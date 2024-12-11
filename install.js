@@ -51,6 +51,7 @@ module.exports = {
         message: [
           "huggingface-cli download tencent/HunyuanVideo --local-dir ckpts",
           "{{platform === 'win32' ? 'dir' : 'ls'}}",
+        ]
       }
     },
     {
