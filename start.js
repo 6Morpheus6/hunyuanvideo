@@ -10,7 +10,7 @@ module.exports = {
         },
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "python gradio_server.py --dit-weight ckpts/hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8.pt --use-fp8",    // Edit with your custom commands
+          "python gradio_server.py --dit-weight ckpts/hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8.pt --use-fp8 --use-cpu-offload",    // Edit with your custom commands
         ],
         on: [{
           // The regular expression pattern to monitor.
