@@ -42,6 +42,24 @@ module.exports = {
       params: {
         path: "app",
         message: [
+          "huggingface-cli download tencent/HunyuanVideo hunyuan-video-t2v-720p/vae/config.json --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
+        ]
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
+        path: "app",
+        message: [
+          "huggingface-cli download tencent/HunyuanVideo hunyuan-video-t2v-720p/vae/pytorch_model.pt --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
+        ]
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
+        path: "app",
+        message: [
           "huggingface-cli download tencent/HunyuanVideo hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8.pt --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
         ]
       }
