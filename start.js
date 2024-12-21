@@ -6,7 +6,7 @@ module.exports = {
       params: {
         venv: "env",                // Edit this to customize the venv folder path
         env: {
-          
+          SERVER_NAME: "127.0.0.1",
         },
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
