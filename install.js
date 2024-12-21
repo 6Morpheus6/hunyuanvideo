@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/peanutcocktail/HunyuanVideoGP app",
+          "git clone https://github.com/Tencent/HunyuanVideo app",
         ]
       }
     },
@@ -40,7 +40,10 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        message: "conda install -y -c conda-forge huggingface_hub"
+        path: "app",
+        message: [
+          "huggingface-cli download tencent/HunyuanVideo hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8.pt --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
+        ]
       }
     },
     {
@@ -48,7 +51,7 @@ module.exports = {
       params: {
         path: "app",
         message: [
-          "huggingface-cli download tencent/HunyuanVideo --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
+          "huggingface-cli download tencent/HunyuanVideo hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8_map.pt --local-dir ckpts {{platform === 'win32' ? ' && dir' : ' ; ls'}}",
         ]
       }
     },
