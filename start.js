@@ -5,9 +5,12 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",                // Edit this to customize the venv folder path
+        env: {
+          
+        },
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "python gradio_server.py",    // Edit with your custom commands
+          "python gradio_server.py --dit-weight ckpts/hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states_fp8.pt --use-fp8",    // Edit with your custom commands
         ],
         on: [{
           // The regular expression pattern to monitor.
