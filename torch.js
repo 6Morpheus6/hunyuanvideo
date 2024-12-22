@@ -8,8 +8,8 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
-          "pip install https://github.com/bdashore3/flash-attention/releases/download/v2.7.1.post1/flash_attn-2.7.1.post1+cu124torch2.3.1cxx11abiFALSE-cp310-cp310-win_amd64.whl"
+          "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
+          "pip install https://github.com/bdashore3/flash-attention/releases/download/v2.7.1.post1/flash_attn-2.7.1.post1+cu124torch2.5.1cxx11abiFALSE-cp310-cp310-win_amd64.whl"
         ]
       }
     },
@@ -30,7 +30,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1"
+        "message": "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1"
       }
     },
     // mac
@@ -40,7 +40,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1"
+        "message": "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1"
       }
     },
     // linux nvidia
@@ -51,7 +51,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
+          "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
           "pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3"
         ]
       }
@@ -63,7 +63,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/rocm6.0"
+        "message": "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/rocm6.0"
       }
     },
     // linux cpu
@@ -73,7 +73,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu"
+        "message": "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu"
       }
     }
   ]
