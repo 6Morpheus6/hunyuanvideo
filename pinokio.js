@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "2.0",
+  version: "3.0",
   title: "HunyuanVideo",
   description: "Gradio UI for Hunyuan Video Generator https://github.com/deepbeepmeep/HunyuanVideoGP",
   icon: "icon.png",
