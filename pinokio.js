@@ -77,6 +77,7 @@ module.exports = {
           params: {
             profile: 5
           }
+        }, {
           icon: "fa-solid fa-power-off",
           text: "48G RAM + 24G VRAM",
           href: "start.js",
