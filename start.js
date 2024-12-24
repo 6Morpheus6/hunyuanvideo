@@ -16,13 +16,7 @@ module.exports = async (kernel) => {
             "python gradio_server.py",    // Edit with your custom commands
           ],
           on: [{
-            // The regular expression pattern to monitor.
-            // When this pattern occurs in the shell terminal, the shell will return,
-            // and the script will go onto the next step.
             "event": "/http:\/\/[0-9.:]+/",   
-
-            // "done": true will move to the next step while keeping the shell alive.
-            // "kill": true will move to the next step after killing the shell.
             "done": true
           }]
         }
