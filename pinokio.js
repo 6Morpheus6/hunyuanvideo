@@ -61,18 +61,11 @@ module.exports = {
           text: "32G RAM + 12G VRAM (Recommended High)",
           href: "start.js",
           params: {
-            profile: 3
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "16G RAM + 10G VRAM (Recommended Low)",
-          href: "start.js",
-          params: {
             profile: 4
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Lowest RAM + VRAM (Very Low)",
+          text: "16G RAM + 10G VRAM (Recommended Low)",
           href: "start.js",
           params: {
             profile: 5
@@ -82,21 +75,21 @@ module.exports = {
           text: "48G RAM + 24G VRAM",
           href: "start.js",
           params: {
-            profile: 0
+            profile: 1
           }
         }, {
           icon: "fa-solid fa-power-off",
           text: "48G RAM + 12G VRAM",
           href: "start.js",
           params: {
-            profile: 1
+            profile: 2
           }
         }, {
           icon: "fa-solid fa-power-off",
           text: "32G RAM + 24G VRAM",
           href: "start.js",
           params: {
-            profile: 2
+            profile: 3
           }
         }, {
           icon: "fa-solid fa-plug",
