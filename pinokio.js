@@ -65,7 +65,7 @@ module.exports = {
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "16G RAM + 10G VRAM (Recommended Low)",
+          text: "24G RAM + 10G VRAM (Recommended Low)",
           href: "start.js",
           params: {
             profile: 5
