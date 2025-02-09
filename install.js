@@ -10,6 +10,16 @@ module.exports = {
       }
     },
     {
+      method: "shell.run",
+      params: {
+        venv: "env",                // Edit this to customize the venv folder path
+        path: "app",                // Edit this to customize the path to start the shell from
+        message: [
+          "uv pip install -r requirements.txt",
+        ]
+      }
+    },
+    {
       method: "script.start",
       params: {
         uri: "torch.js",
@@ -18,16 +28,6 @@ module.exports = {
           path: "app",                // Edit this to customize the path to start the shell from
           // xformers: true   // uncomment this line if your project requires xformers
         }
-      }
-    },
-    {
-      method: "shell.run",
-      params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
-        message: [
-          "uv pip install -r requirements.txt",
-        ]
       }
     },
 //    {
