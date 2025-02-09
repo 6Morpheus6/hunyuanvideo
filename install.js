@@ -10,6 +10,15 @@ module.exports = {
       }
     },
     {
+      method: "shell.run",
+      params: {
+        venv: "env",                // Edit this to customize the venv folder path
+        venv_python: "3.11",
+        path: "app",                // Edit this to customize the path to start the shell from
+        message: " "
+      }
+    },
+    {
       method: "script.start",
       params: {
         uri: "torch.js",
