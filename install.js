@@ -10,6 +10,16 @@ module.exports = {
       }
     },
     {
+      method: "shell.run",
+      params: {
+        venv: "env",                // Edit this to customize the venv folder path
+        path: "app",                // Edit this to customize the path to start the shell from
+        message: [
+          "uv pip install -r requirements.txt",
+        ]
+      }
+    },
+    {
       method: "script.start",
       params: {
         uri: "torch.js",
@@ -26,7 +36,7 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "uv pip install -r requirements.txt --no-deps",
+          "uv pip install numpy==1.24.4"
         ]
       }
     },
