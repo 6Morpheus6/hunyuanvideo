@@ -58,39 +58,87 @@ module.exports = {
       } else {
         return [{
           icon: "fa-solid fa-power-off",
-          text: "32G RAM + 12G VRAM (Recommended High)",
-          href: "start.js",
-          params: {
-            profile: 4
-          }
+          text: "Run Original Model",
+          menu: [{
+            icon: "fa-solid fa-power-off",
+            text: "32G RAM + 12G VRAM (Recommended High)",
+            href: "start.js",
+            params: {
+              profile: 4
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "24G RAM + 10G VRAM (Recommended Low)",
+            href: "start.js",
+            params: {
+              profile: 5
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "48G RAM + 24G VRAM",
+            href: "start.js",
+            params: {
+              profile: 1
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "48G RAM + 12G VRAM",
+            href: "start.js",
+            params: {
+              profile: 2
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "32G RAM + 24G VRAM",
+            href: "start.js",
+            params: {
+              profile: 3
+            }
+          }]
         }, {
           icon: "fa-solid fa-power-off",
-          text: "24G RAM + 10G VRAM (Recommended Low)",
-          href: "start.js",
-          params: {
-            profile: 5
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "48G RAM + 24G VRAM",
-          href: "start.js",
-          params: {
-            profile: 1
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "48G RAM + 12G VRAM",
-          href: "start.js",
-          params: {
-            profile: 2
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "32G RAM + 24G VRAM",
-          href: "start.js",
-          params: {
-            profile: 3
-          }
+          text: "Run Fast Model",
+          menu: [{
+            icon: "fa-solid fa-power-off",
+            text: "32G RAM + 12G VRAM (Recommended High)",
+            href: "start.js",
+            params: {
+              profile: 4,
+              fast: true
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "24G RAM + 10G VRAM (Recommended Low)",
+            href: "start.js",
+            params: {
+              profile: 5,
+              fast: true
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "48G RAM + 24G VRAM",
+            href: "start.js",
+            params: {
+              profile: 1,
+              fast: true
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "48G RAM + 12G VRAM",
+            href: "start.js",
+            params: {
+              profile: 2,
+              fast: true
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "32G RAM + 24G VRAM",
+            href: "start.js",
+            params: {
+              profile: 3,
+              fast: true
+            }
+          }]
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
