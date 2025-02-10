@@ -140,6 +140,11 @@ module.exports = {
             }
           }]
         }, {
+          icon: "fa-regular fa-folder-open",
+          text: "Loras (save lora files here)",
+          href: "loras",
+          fs: true
+        }, {
           icon: "fa-solid fa-plug",
           text: "Update",
           href: "update.js",
