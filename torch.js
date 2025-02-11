@@ -15,7 +15,7 @@ module.exports = {
           "uv pip install https://github.com/woct0rdho/triton-windows/releases/download/v3.1.0-windows.post8/triton-3.1.0-cp310-cp310-win_amd64.whl",
           //"uv pip install sageattention",
           "uv pip install https://github.com/sdbds/SageAttention-for-windows/releases/download/2.0.1/sageattention-2.0.1+cu124torch2.5.1-cp310-cp310-win_amd64.whl",
-          "uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-win_amd64.whl"
+          //"uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-win_amd64.whl"
         ]
       }
     },
@@ -61,7 +61,7 @@ module.exports = {
           //"uv pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3"
           "uv pip install sageattention==1.0.6",
           "uv pip install triton",
-          "uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-manylinux2014_x86_64.whl"
+          //"uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-manylinux2014_x86_64.whl"
         ]
       }
     },
