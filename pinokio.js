@@ -58,131 +58,36 @@ module.exports = {
       } else {
         return [{
           icon: "fa-solid fa-power-off",
-          text: "Run Original Model",
-          menu: [{
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 12G VRAM (Recommended High)",
-            href: "start.js",
-            params: {
-              profile: 4
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "24G RAM + 10G VRAM (Recommended Low)",
-            href: "start.js",
-            params: {
-              profile: 5
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 1
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 12G VRAM",
-            href: "start.js",
-            params: {
-              profile: 2
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 3
-            }
-          }]
+          text: "Fastest (Hunyuan Fast + Compiled + Cache)",
+          href: "start.js",
+          params: {
+            profile: 4,
+            fastest: true,
+            compile: true
+          }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Run Fast",
-          menu: [{
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 12G VRAM (Recommended High)",
-            href: "start.js",
-            params: {
-              profile: 4,
-              fast: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "24G RAM + 10G VRAM (Recommended Low)",
-            href: "start.js",
-            params: {
-              profile: 5,
-              fast: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 1,
-              fast: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 12G VRAM",
-            href: "start.js",
-            params: {
-              profile: 2,
-              fast: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 3,
-              fast: true
-            }
-          }]
+          text: "Fast (HunyuanFast + Cache)",
+          href: "start.js",
+          params: {
+            profile: 4,
+            fast: true
+          }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Run Fastest",
-          menu: [{
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 12G VRAM (Recommended High)",
-            href: "start.js",
-            params: {
-              profile: 4,
-              fastest: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "24G RAM + 10G VRAM (Recommended Low)",
-            href: "start.js",
-            params: {
-              profile: 5,
-              fastest: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 1,
-              fastest: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "48G RAM + 12G VRAM",
-            href: "start.js",
-            params: {
-              profile: 2,
-              fastest: true
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "32G RAM + 24G VRAM",
-            href: "start.js",
-            params: {
-              profile: 3,
-              fastest: true
-            }
-          }]
+          text: "Original Compiled (highest quality + slower)",
+          href: "start.js",
+          params: {
+            profile: 4
+            compile: true
+          }
+        }, {
+          icon: "fa-solid fa-power-off",
+          text: "Original (highest quality + slowest)",
+          href: "start.js",
+          params: {
+            profile: 4
+          }
         }, {
           icon: "fa-regular fa-folder-open",
           text: "Loras (save lora files here)",
