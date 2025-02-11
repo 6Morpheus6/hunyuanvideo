@@ -78,7 +78,7 @@ module.exports = {
           text: "Original Compiled (highest quality + slower)",
           href: "start.js",
           params: {
-            profile: 4
+            profile: 4,
             compile: true
           }
         }, {
