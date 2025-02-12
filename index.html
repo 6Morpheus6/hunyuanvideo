@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  font-family: Sans-serif;
+  display: flex;
+  height: 100%;
+}
+.row {
+  color: rgba(0,0,0,0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 20px 0;
+  background: whitesmoke;
+}
+.row img {
+  width: 100%;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.9);
+}
+.tab {
+  align-items: center;
+  text-decoration: none;
+  color: silver;
+}
+.tab-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 14px;
+  word-break: break-word;
+}
+nav {
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(0,0,100,0.1);
+}
+.canvas {
+  overflow: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+}
+.container {
+  max-width: 1000px;
+}
+a:active {
+  border-right: 10px solid black;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  margin: 5px 0;
+}
+.well {
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <div class='tab'>
+      <a href='#ollama' class='tab-item'>Option 0. Local LLM (Ollama)</a>
+      <a href='#github' class='tab-item'>Option 1. Use Free LLM API (Github)</a>
+      <a href='#api' class='tab-item'>Option 2. Use Claude / OpenAI / Gemini / Groq / OpenRouter / Mistral</a>
+    </div>
+  </nav>
+  <div class='canvas'>
+    <div id='ollama' class='container'>
+      <h1>Hunyuan Video</h1>
+      <div class='row'>
+        <h2>Fastest</h2>
+        <div>Hunyuan Fast Model + Teacache + Compile</div>
+        <div>When to use:</div>
+        <ol>
+          <li>if you want the fastest option (will be lower quality than the original model)</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&fast=true&compile=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Fast</h2>
+        <div>Hunyuan Fast Model + Teacache</div>
+        <div>When to use:</div>
+        <ol>
+          <li>if the Fastest mode fails to compile for some reason</li>
+          <li>if you don't want it to recompile every time you change the prompt</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&fast=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Original Compiled</h2>
+        <div>Original Hunyuan Video Model, with compilation</div>
+        <div>When to use:</div>
+        <ol>
+          <li>If you want high quality results</li>
+          <li>If you are OK with slower generation</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4&compile=true">Start</a>
+      </div>
+      <div class='row'>
+        <h2>Original NON-Compiled</h2>
+        <div>Original Hunyuan Video Model</div>
+        <div>When to use:</div>
+        <ol>
+          <li>Only if the "Original Compiled" doesn't work</li>
+        </ol>
+        <a class='btn' href="start.js?profile=4">Start</a>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
