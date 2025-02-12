@@ -40,6 +40,14 @@ module.exports = {
         ]
       }
     },
+    {
+      method: 'input',
+      params: {
+        title: 'Installation completed',
+        description: 'Click "Start" on the left sidebar to get started'
+      }
+    },
+
 //    {
 //      method: "fs.link",
 //      params: {
