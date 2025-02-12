@@ -14,11 +14,14 @@ main {
 }
 ol {
   padding-inline-start: 20px;
+  flex-grow: 1;
 }
 li {
   font-size: 14px;
 }
 .row {
+  display: flex;
+  flex-direction: column;
   color: rgba(0,0,0,0.8);
   padding: 20px;
   box-sizing: border-box;
@@ -30,6 +33,7 @@ li {
   width: 100%;
 }
 h1 {
+  text-align: center;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: -2px;
@@ -72,6 +76,10 @@ nav {
   flex-grow: 1;
 }
 .container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   max-width: 1000px;
 }
 a:active {
@@ -85,6 +93,7 @@ a:active {
   background: black;
   color: white;
   margin: 5px 0;
+  text-align: center;
 }
 .well {
   margin: 20px 0;
@@ -95,8 +104,8 @@ a:active {
 <body>
 <main>
   <div class='canvas'>
+    <h1>Hunyuan Video</h1>
     <div class='container'>
-      <h1>Hunyuan Video</h1>
       <div class='row'>
         <h2>Fastest</h2>
         <div>Hunyuan Fast Model + Teacache + Compile</div>
