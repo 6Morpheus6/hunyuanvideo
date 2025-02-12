@@ -56,40 +56,40 @@ module.exports = {
         }]
       } else {
         return [{
+//          icon: "fa-solid fa-power-off",
+//          text: "Start",
+//          href: "index.html?raw=true",
+//          mode: "refresh"
+          text: "Fastest (Hunyuan Fast + Compiled + Cache)",
+          href: "start.js",
+          params: {
+            profile: 4,
+            fast: true,
+            compile: true
+          }
+        }, {
           icon: "fa-solid fa-power-off",
-          text: "Start",
-          href: "index.html?raw=true",
-          mode: "refresh"
-          //text: "Fastest (Hunyuan Fast + Compiled + Cache)",
-          //href: "start.js",
-          //params: {
-          //  profile: 4,
-          //  fast: true,
-          //  compile: true
-          //}
-//        }, {
-//          icon: "fa-solid fa-power-off",
-//          text: "Fast (HunyuanFast + Cache)",
-//          href: "start.js",
-//          params: {
-//            profile: 4,
-//            fast: true
-//          }
-//        }, {
-//          icon: "fa-solid fa-power-off",
-//          text: "Original Compiled (highest quality + slower)",
-//          href: "start.js",
-//          params: {
-//            profile: 4,
-//            compile: true
-//          }
-//        }, {
-//          icon: "fa-solid fa-power-off",
-//          text: "Original (highest quality + slowest)",
-//          href: "start.js",
-//          params: {
-//            profile: 4
-//          }
+          text: "Fast (HunyuanFast + Cache)",
+          href: "start.js",
+          params: {
+            profile: 4,
+            fast: true
+          }
+        }, {
+          icon: "fa-solid fa-power-off",
+          text: "Original Compiled (highest quality + slower)",
+          href: "start.js",
+          params: {
+            profile: 4,
+            compile: true
+          }
+        }, {
+          icon: "fa-solid fa-power-off",
+          text: "Original (highest quality + slowest)",
+          href: "start.js",
+          params: {
+            profile: 4
+          }
         }, {
           icon: "fa-regular fa-folder-open",
           text: "Loras (save lora files here)",
