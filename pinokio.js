@@ -56,7 +56,7 @@ module.exports = {
         }]
       } else {
         return [{
-//          icon: "fa-solid fa-power-off",
+          icon: "fa-solid fa-power-off",
 //          text: "Start",
 //          href: "index.html?raw=true",
 //          mode: "refresh"
