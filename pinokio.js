@@ -59,7 +59,8 @@ module.exports = {
         return [{
           icon: "fa-solid fa-power-off",
           text: "Start",
-          href: "index.html?raw=true"
+          href: "index.html?raw=true",
+          mode: "refresh"
           //text: "Fastest (Hunyuan Fast + Compiled + Cache)",
           //href: "start.js",
           //params: {
