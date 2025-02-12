@@ -15,6 +15,7 @@ main {
 ol {
   padding-inline-start: 20px;
   flex-grow: 1;
+  margin: 10px 0;
 }
 li {
   font-size: 14px;
@@ -30,6 +31,9 @@ li {
   margin: 20px 0;
   background: whitesmoke;
 }
+.subtitle {
+  margin-top: 20px;
+}
 .row img {
   width: 100%;
 }
@@ -44,7 +48,6 @@ h1 {
 h2 {
   font-size: 25px;
   margin: 0;
-  margin-bottom: 10px;
   color: rgba(0,0,0,0.9);
 }
 .tab {
@@ -112,7 +115,7 @@ a:active {
       <div class='row'>
         <h2>Fastest</h2>
         <div>Hunyuan Fast Model + Teacache + Compile</div>
-        <div>When to use:</div>
+        <div class='subtitle'>When to use:</div>
         <ol>
           <li>if you want the fastest option (will be lower quality than the original model)</li>
         </ol>
@@ -121,7 +124,7 @@ a:active {
       <div class='row'>
         <h2>Fast</h2>
         <div>Hunyuan Fast Model + Teacache</div>
-        <div>When to use:</div>
+        <div class='subtitle'>When to use:</div>
         <ol>
           <li>if the Fastest mode fails to compile for some reason</li>
           <li>if you don't want it to recompile every time you change the prompt</li>
@@ -131,7 +134,7 @@ a:active {
       <div class='row'>
         <h2>Original Compiled</h2>
         <div>Original Hunyuan Video Model, with compilation</div>
-        <div>When to use:</div>
+        <div class='subtitle'>When to use:</div>
         <ol>
           <li>If you want high quality results</li>
           <li>If you are OK with slower generation</li>
@@ -141,7 +144,7 @@ a:active {
       <div class='row'>
         <h2>Original NON-Compiled</h2>
         <div>Original Hunyuan Video Model</div>
-        <div>When to use:</div>
+        <div class='subtitle'>When to use:</div>
         <ol>
           <li>If you want high quality results</li>
           <li>But the "Original Compiled" option doesn't work</li>
