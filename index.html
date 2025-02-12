@@ -6,9 +6,17 @@ html, body {
   margin: 0;
 }
 main {
+  background: white;
   font-family: Sans-serif;
   display: flex;
   height: 100%;
+  font-size: 14px;
+}
+ol {
+  padding-inline-start: 20px;
+}
+li {
+  font-size: 14px;
 }
 .row {
   color: rgba(0,0,0,0.8);
@@ -86,15 +94,8 @@ a:active {
 </head>
 <body>
 <main>
-  <nav>
-    <div class='tab'>
-      <a href='#ollama' class='tab-item'>Option 0. Local LLM (Ollama)</a>
-      <a href='#github' class='tab-item'>Option 1. Use Free LLM API (Github)</a>
-      <a href='#api' class='tab-item'>Option 2. Use Claude / OpenAI / Gemini / Groq / OpenRouter / Mistral</a>
-    </div>
-  </nav>
   <div class='canvas'>
-    <div id='ollama' class='container'>
+    <div class='container'>
       <h1>Hunyuan Video</h1>
       <div class='row'>
         <h2>Fastest</h2>
