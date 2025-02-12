@@ -1,8 +1,8 @@
 const path = require('path')
 module.exports = {
-  version: "3.0",
-  title: "HunyuanVideo GPU Poor",
-  description: "Gradio UI for Hunyuan Video Generator that works on GPU poor machines https://github.com/deepbeepmeep/HunyuanVideoGP",
+  version: "3.6",
+  title: "HunyuanVideo",
+  description: "Super Optimized Gradio UI for Hunyuan Video Generator that works on GPU poor machines https://github.com/deepbeepmeep/HunyuanVideoGP",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
