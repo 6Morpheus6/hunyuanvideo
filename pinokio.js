@@ -62,7 +62,7 @@ module.exports = {
           href: "start.js",
           params: {
             profile: 4,
-            fastest: true,
+            fast: true,
             compile: true
           }
         }, {
