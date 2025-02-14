@@ -60,7 +60,7 @@ module.exports = {
 //          text: "Start",
 //          href: "index.html?raw=true",
 //          mode: "refresh"
-          text: "Fastest<br>(fast generation + lower quality)",
+          text: "<strong>Fast</strong><br>fast generation",
           href: "start.js",
           params: {
             profile: 4,
@@ -69,7 +69,7 @@ module.exports = {
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Original Compiled<br>(highest quality + slower)",
+          text: "<strong>Original</strong><br>highest quality but slower",
           href: "start.js",
           params: {
             profile: 4,
@@ -77,7 +77,7 @@ module.exports = {
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Fast (HunyuanFast)",
+          text: "<strong>Fast Unoptimized</strong><br>try if 'fast' doesn't work",
           href: "start.js",
           params: {
             profile: 4,
@@ -85,7 +85,7 @@ module.exports = {
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "Original (highest quality + slowest)",
+          text: "<strong>Original Unoptimized</strong><br>try if 'original' doesn't work",
           href: "start.js",
           params: {
             profile: 4
