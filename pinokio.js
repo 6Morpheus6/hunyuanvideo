@@ -57,27 +57,7 @@ module.exports = {
       } else {
         return [{
           icon: "fa-solid fa-power-off",
-//          text: "Start",
-//          href: "index.html?raw=true",
-//          mode: "refresh"
-          text: "<div><strong>Fast</strong><br><div>fast generation</div></div>",
-          href: "start.js",
-          params: {
-            profile: 4,
-            fast: true,
-            compile: true
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "<div><strong>Original</strong><br><div>highest quality but slower</div></div>",
-          href: "start.js",
-          params: {
-            profile: 4,
-            compile: true
-          }
-        }, {
-          icon: "fa-solid fa-power-off",
-          text: "<div><strong>Fast Unoptimized</strong><br><div>try if 'fast' doesn't work</div></div>",
+          text: "<div><strong>Fast</strong><br><div>fast but lower quality</div></div>",
           href: "start.js",
           params: {
             profile: 4,
@@ -85,11 +65,32 @@ module.exports = {
           }
         }, {
           icon: "fa-solid fa-power-off",
-          text: "<div><strong>Original Unoptimized</strong><br><div>try if 'original' doesn't work</div></div>",
+          text: "<div><strong>Original</strong><br><div>slow but high quality</div></div>",
           href: "start.js",
           params: {
             profile: 4
           }
+        }, {
+          icon: "fa-solid fa-power-off",
+          text: "advanced",
+          menu: [{
+            icon: "fa-solid fa-power-off",
+            text: "<div><strong>Fast Compiled</strong><br><div>fast & compiled. faster than 'Fast', but might not work on all platforms</div></div>",
+            href: "start.js",
+            params: {
+              profile: 4,
+              fast: true,
+              compile: true
+            }
+          }, {
+            icon: "fa-solid fa-power-off",
+            text: "<div><strong>Original Compiled</strong><br><div>origina & compiled. faster than 'Original', but might now work on all platforms.</div></div>",
+            href: "start.js",
+            params: {
+              profile: 4,
+              compile: true
+            }
+          }]
         }, {
           icon: "fa-regular fa-folder-open",
           text: "Loras (save lora files here)",
