@@ -58,24 +58,11 @@ module.exports = {
         return [{
           icon: "fa-solid fa-image",
           text: "Image to Video",
-          menu: [{
-            icon: "fa-solid fa-power-off",
-            text: "<div><strong>Fast</strong><br><div>fast but lower quality</div></div>",
-            href: "start.js",
-            params: {
-              profile: 4,
-              fast: true,
-              i2v: true,
-            }
-          }, {
-            icon: "fa-solid fa-power-off",
-            text: "<div><strong>Original</strong><br><div>slow but high quality</div></div>",
-            href: "start.js",
-            params: {
-              profile: 4,
-              i2v: true,
-            }
-          }]
+          href: "start.js",
+          params: {
+            profile: 4,
+            i2v: true,
+          }
         }, {
           icon: "fa-solid fa-scroll",
           text: "Text to Video",
@@ -101,26 +88,12 @@ module.exports = {
           menu: [{
             icon: "fa-solid fa-image",
             text: "Image to Video",
-            menu: [{
-              icon: "fa-solid fa-power-off",
-              text: "<div><strong>Fast Compiled</strong><br><div>fast & compiled. faster than 'Fast', but might not work on all platforms</div></div>",
-              href: "start.js",
-              params: {
-                profile: 4,
-                fast: true,
-                compile: true,
-                i2v: true,
-              }
-            }, {
-              icon: "fa-solid fa-power-off",
-              text: "<div><strong>Original Compiled</strong><br><div>origina & compiled. faster than 'Original', but might now work on all platforms.</div></div>",
-              href: "start.js",
-              params: {
-                profile: 4,
-                compile: true,
-                i2v: true,
-              }
-            }]
+            href: "start.js",
+            params: {
+              profile: 4,
+              compile: true,
+              i2v: true,
+            }
           }, {
             icon: "fa-solid fa-scroll",
             text: "Text to Video",
