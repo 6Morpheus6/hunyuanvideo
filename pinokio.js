@@ -119,8 +119,15 @@ module.exports = {
         }, {
           icon: "fa-regular fa-folder-open",
           text: "Loras (save lora files here)",
-          href: "loras",
-          fs: true
+          menu: [{
+            text: "Text to Video Loras",
+            href: "loras",
+            fs: true
+          }, {
+            text: "Image to Video Loras",
+            href: "loras-i2v",
+            fs: true
+          }]
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
