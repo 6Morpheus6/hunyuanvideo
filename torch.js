@@ -20,7 +20,8 @@ module.exports = {
           "uv pip install https://github.com/deepbeepmeep/SageAttention/raw/refs/heads/main/releases/sageattention-2.1.0-cp310-cp310-win_amd64.whl"
           //"uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-win_amd64.whl"
         ]
-      }
+      },
+      "next": null
     },
     // windows amd
     {
@@ -30,7 +31,8 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch-directml torchaudio torchvision numpy==1.26.4"
-      }
+      },
+      "next": null
     },
     // windows cpu
     {
@@ -40,7 +42,8 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1"
-      }
+      },
+      "next": null
     },
     // mac
     {
@@ -50,7 +53,8 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1"
-      }
+      },
+      "next": null
     },
     // linux nvidia
     {
@@ -68,7 +72,8 @@ module.exports = {
           "uv pip install triton",
           //"uv pip install https://download.pytorch.org/whl/cu121/xformers-0.0.27.post2-cp310-cp310-manylinux2014_x86_64.whl"
         ]
-      }
+      },
+      "next": null
     },
     // linux rocm (amd)
     {
@@ -78,7 +83,8 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/rocm6.0"
-      }
+      },
+      "next": null
     },
     // linux cpu
     {
