@@ -13,7 +13,7 @@ module.exports = async (kernel) => {
           },
           path: "app",                // Edit this to customize the path to start the shell from
           message: [
-            "python gradio_server.py --profile {{args.profile}} {{args.fast ? '--fast' : ''}} {{args.compile ? '--compile' : ''}} {{args.i2v ? '--i2v --lora-dir ../loras-i2v' : '--lora-dir ../loras'}}",    // Edit with your custom commands
+            "python gradio_server.py --profile {{args.profile}} {{args.fast ? '--fast' : ''}} {{args.compile ? '--compile' : ''}} {{args.i2v ? '--i2v --lora-dir-i2v ../loras-i2v' : '--lora-dir ../loras'}}",    // Edit with your custom commands
           ],
           on: [{
             "event": "/http:\/\/[0-9.:]+/",   
