@@ -13,7 +13,7 @@
     "https://x.com/cocktailpeanut/status/1890442662269899167"
   ],
   "links": [{
-    "title": "deepbeepmeep (app)",
+    "title": "deepbeepmeep (wrote the app)",
     "links": [{
       "title": "X",
       "value": "https://x.com/deepbeepmeep"
@@ -22,7 +22,7 @@
       "value": "https://github.com/deepbeepmeep"
     }]
   }, {
-    "title": "cocktailpeanut (script)",
+    "title": "cocktailpeanut (wrote the launcher)",
     "links": [{
       "type": "bitcoin",
       "value": "bc1qx90z3ce9qz4p2pnt06gd0ytntl86qw4d6qv39k"
