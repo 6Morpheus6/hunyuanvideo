@@ -13,7 +13,16 @@
     "https://x.com/cocktailpeanut/status/1890442662269899167"
   ],
   "links": [{
-    "title": "cocktailpeanut",
+    "title": "deepbeepmeep (app)",
+    "links": [{
+      "title": "X",
+      "value": "https://x.com/deepbeepmeep"
+    }, {
+      "title": "Github",
+      "value": "https://github.com/deepbeepmeep"
+    }]
+  }, {
+    "title": "cocktailpeanut (script)",
     "links": [{
       "type": "bitcoin",
       "value": "bc1qx90z3ce9qz4p2pnt06gd0ytntl86qw4d6qv39k"
@@ -26,15 +35,6 @@
     }, {
       "title": "Discord",
       "value": "https://discord.gg/TQdNwadtE4"
-    }]
-  }, {
-    "title": "deepbeepmeep",
-    "links": [{
-      "title": "X",
-      "value": "https://x.com/deepbeepmeep"
-    }, {
-      "title": "Github",
-      "value": "https://github.com/deepbeepmeep"
     }]
   }]
 }
