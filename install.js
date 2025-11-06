@@ -1,6 +1,13 @@
 module.exports = {
   run: [
-    // Edit this step to customize the git repository to use
+    {
+      when: "{{gpu === 'amd' || platform === 'darwin'}}",
+      method: "notify",
+      params: {
+        html: "This app requires an NVIDIA GPU. Not compatible with AMD GPUs and macOS."
+      },
+      next: null
+    },
     {
       method: "shell.run",
       params: {
@@ -12,10 +19,10 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
+        venv: "env",
+        path: "app",
         message: [
-          "uv pip install -r requirements.txt",
+          "uv pip install -r ../requirements.txt",
         ]
       }
     },
@@ -24,20 +31,11 @@ module.exports = {
       params: {
         uri: "torch.js",
         params: {
-          venv: "env",                // Edit this to customize the venv folder path
-          path: "app",                // Edit this to customize the path to start the shell from
-          // xformers: true   // uncomment this line if your project requires xformers
+          venv: "env",
+          path: "app",
+          triton: true,
+          sageattention: true
         }
-      }
-    },
-    {
-      method: "shell.run",
-      params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
-        message: [
-          "uv pip install numpy==1.24.4"
-        ]
       }
     },
     {
@@ -46,13 +44,6 @@ module.exports = {
         title: 'Installation completed',
         description: 'Click "Start" on the left sidebar to get started'
       }
-    },
-
-//    {
-//      method: "fs.link",
-//      params: {
-//        venv: "app/env"
-//      }
-//    },
+    }
   ]
 }
